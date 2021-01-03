@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//ejemplo de un statelessWidget
 class HomePage extends StatelessWidget {
   final styleText = new TextStyle(fontSize: 30);
 
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+          children: <Widget>[
             Text(
               "Número de Tabs:",
               style: styleText,
@@ -28,7 +29,9 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => {print("Hola Mundoooo!")},
+        onPressed: () {
+          print("Hola Mundoooo!");
+        },
         child: Icon(Icons.add_circle_outline),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
